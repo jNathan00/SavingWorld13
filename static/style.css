@@ -1,26 +1,19 @@
-table {
-	border-collapse: collapse;
-	width: 100%;
-}
-
-th, td {
-	text-align: left;
-	padding: 8px;
-}
-
-tr:nth-child(even) {
+body {
+	font-family: Arial, sans-serif;
 	background-color: #f2f2f2;
 }
 
-form {
-	margin-top: 20px;
+h1 {
+	text-align: center;
+	color: #333;
 }
 
-label {
-	display: inline-block;
-	width: 80px;
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 30px;
 }
 
-input[type="text"] {
-	width: 200px;
-}
+th {
+	background-color: #333
+
