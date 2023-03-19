@@ -9,8 +9,9 @@ def index():
     if request.method == 'POST':
         subject = request.form['subject']
         day = request.form['day']
-        time = request.form['time']
-        timetable.append({'subject': subject, 'day': day, 'time': time})
+        timestart = request.form['time start']
+        timeend = request.form['time end']
+        timetable.append({'subject': subject, 'day': day, 'time start': timestart, 'time end': timeend})
     return render_template('index.html', subjects=timetable)
 
 if __name__ == '__main__':
