@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Timetable Web App</title>
+    <title>Study schledule</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
   <body>
-    <h1>Timetable Web App</h1>
+    <h1>Study Schledule</h1>
     <form action="/" method="post">
       <label for="subject">Subject:</label>
       <input type="text" id="subject" name="subject"><br>
@@ -17,6 +18,8 @@
         <option value="wednesday">Wednesday</option>
         <option value="thursday">Thursday</option>
         <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
       </select><br>
       
       <label for="time start">Time start:</label>
@@ -28,7 +31,7 @@
       <input type="submit" value="Add Subject">
     </form>
     <br>
-    <h2>Current Timetable:</h2>
+    <h2>Schledule:</h2>
     <ul>
       {% for subject in subjects %}
         <li>{{ subject }}</li>
@@ -36,3 +39,5 @@
     </ul>
   </body>
 </html>
+
+
